@@ -44,8 +44,15 @@ body {
   display: flex;
   margin: auto 24px; }
 
+.img {
+  width: 40%; }
+
+img {
+  width: 100%; }
+
 .rightside {
-  display: block; }
+  display: block;
+  width: 60%; }
   .rightside form {
     float: right;
     border: 1px solid black;
@@ -77,3 +84,36 @@ body {
   font-weight: normal;
   text-align: justify;
   margin-left: 12px; }
+
+@media only screen and (max-width: 700px) {
+  .content {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    margin: auto 24px; }
+  #text {
+    margin-left: 0px; }
+  .rightside {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%; }
+    .rightside form {
+      border: 1px solid black;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      flex-direction: column;
+      margin-left: 0px;
+      margin-top: 24px; }
+  .img {
+    width: 100%;
+    margin-bottom: 24px; } }
