@@ -83,11 +83,6 @@ img {
 
 @media only screen and (max-width: 700px) {
   .content {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
     flex-direction: column;
     margin: auto 24px; }
   #text {
