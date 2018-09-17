@@ -1,12 +1,8 @@
 body {
-  background-color: #fff;
-  font-family: Arial, sans-serif; }
-
-.container {
   background-color: #f5f5f5;
-  height: 100vh;
-  position: relative; }
-  .container nav {
+  font-family: arial, sans-serif;
+  height: 100%; }
+  body nav {
     background-color: #0b3b54;
     display: -webkit-flex;
     display: -moz-flex;
@@ -14,11 +10,11 @@ body {
     display: -o-flex;
     display: flex;
     align-items: center; }
-    .container nav ul {
+    body nav ul {
       margin: 48px 24px; }
-      .container nav ul li {
+      body nav ul li {
         display: inline-block; }
-        .container nav ul li a {
+        body nav ul li a {
           display: block;
           text-decoration: none;
           font-size: 18px;
@@ -105,13 +101,6 @@ img {
     flex-direction: column-reverse;
     width: 100%; }
     .rightside form {
-      border: 1px solid black;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
-      display: flex;
-      flex-direction: column;
       margin-left: 0px;
       margin-top: 24px; }
   .img {
