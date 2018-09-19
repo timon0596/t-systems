@@ -233,7 +233,6 @@
     </div>
     <div class="result"></div>
 </div>
-
 <script>
     const defaultPiecePosition = 'top: 0; left: 0;';
     const successResult = 'success!';
@@ -323,12 +322,16 @@
             this.piece = pieceElement;
             this.steps = [];
             this.finished = false;
-            this.timeout = 400;
+            this.timeout = 100;
             this.field = new Field();
         }
 
         addStep(direction) {
+            
             this.steps.push({direction})
+            
+            
+            
         }
 
         makeNext(step, endAfterIt) {
@@ -417,6 +420,8 @@
     function plan(piece) {
         // piece.addStep('left');
         // piece.addStep('up');
+        
+        
         piece.addStep('right');
         piece.addStep('right');
         piece.addStep('right');
@@ -450,6 +455,79 @@
         piece.addStep('up');
         piece.addStep('up');
         piece.addStep('up');
+        piece.addStep('right');
+        piece.addStep('right');
+        piece.addStep('right');
+        piece.addStep('right');
+        piece.addStep('right');
+        piece.addStep('right');
+        piece.addStep('down');
+        piece.addStep('down');
+        piece.addStep('down');
+        piece.addStep('down');
+        piece.addStep('down');
+        piece.addStep('left');
+        piece.addStep('left');
+        piece.addStep('left');
+        piece.addStep('left');
+        piece.addStep('up');
+        piece.addStep('up');
+        piece.addStep('up');
+        piece.addStep('right');
+        piece.addStep('right');
+        piece.addStep('down');
+        piece.addStep('left');
+        piece.addStep('down');
+        piece.addStep('right');
+        piece.addStep('right');
+        piece.addStep('up');
+        piece.addStep('up');
+        piece.addStep('up');
+        piece.addStep('left');
+        piece.addStep('left');
+        piece.addStep('left');
+        piece.addStep('left');
+        piece.addStep('down');
+        piece.addStep('down');
+        piece.addStep('down');
+        piece.addStep('down');
+        piece.addStep('down');        
+        piece.addStep('right');
+        piece.addStep('right');
+        piece.addStep('right');
+        piece.addStep('right');
+        piece.addStep('right');
+        piece.addStep('right');
+        piece.addStep('up');
+        piece.addStep('up');
+        piece.addStep('up');
+        piece.addStep('up');
+        piece.addStep('up');
+        piece.addStep('up');
+        piece.addStep('up');
+        piece.addStep('left');
+        piece.addStep('left');
+        piece.addStep('left');
+        piece.addStep('left');
+        piece.addStep('left');
+        piece.addStep('left');
+        piece.addStep('left');
+        piece.addStep('left');
+        piece.addStep('down');
+        piece.addStep('down');
+        piece.addStep('down');
+        piece.addStep('down');
+        piece.addStep('down');    
+        piece.addStep('down');    
+        piece.addStep('down');    
+        piece.addStep('down');    
+
+
+
+
+
+
+
     }
 
     function main() {
