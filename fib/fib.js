@@ -1,6 +1,7 @@
 
 function fib(n){
 	var c,a=1,b=1;
+
 	if(n<3){
 		return 1;
 	}else{
@@ -17,4 +18,7 @@ function changehtml(){
 var v = document.getElementById("fib");
 var r = document.getElementById("res");
 var answer = document.getElementById("output");
-r.onclick = function (){ changehtml()}
+r.onclick = function (){if(v.value<1){
+	answer.innerHTML = "порядковый номер не может быть меньше 1";		
+	}else 
+	changehtml();}
